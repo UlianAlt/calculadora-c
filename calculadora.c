@@ -26,8 +26,7 @@ int main(){
         default:
             printf("opcao indisponivel");
             break;
-        
     }
-
+    printf("\n\nFeito por PedroUlian (https://github.com/PedroUlian) (https://github.com/UlianAlt)");
     return 0;
 }
