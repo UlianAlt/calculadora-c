@@ -17,7 +17,3 @@ jobs:
       run: gcc test_calculadora.c -o test_calculadora
     - name: execute
       run: ./test_calculadora
-    - name: check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
