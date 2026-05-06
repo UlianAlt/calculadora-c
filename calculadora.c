@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "function_multiplicar.h"
+#include "function_calcular.h"
 
 int main(){
     int input = 0;
@@ -15,12 +15,36 @@ int main(){
     scanf("%d", &input);
     
     switch(input){
+        case 1:
+            printf("\n\nDigite o primeiro numero: ");
+            scanf("%d", &num1);
+            printf("Digite o segundo numero: ");
+            scanf("%d", &num2);
+            printf("O resultado e: %d", num1+num2);
+            break;
+
+        case 2:
+            printf("\n\nDigite o primeiro numero: ");
+            scanf("%d", &num1);
+            printf("Digite o segundo numero: ");
+            scanf("%d", &num2);
+            printf("O resultado e: %d", num1-num2);
+            break;
+
+        case 3:
+            printf("\n\nDigite o primeiro numero: ");
+            scanf("%d", &num1);
+            printf("Digite o segundo numero: ");
+            scanf("%d", &num2);
+            printf("O resultado e: %d", dividir(num1, num2));
+            break;
+
         case 4:
             printf("\n\nDigite o primeiro numero: ");
             scanf("%d", &num1);
             printf("Digite o segundo numero: ");
             scanf("%d", &num2);
-            printf("O produto e: %d", multiplicar(num1, num2));
+            printf("O resultado e: %d", multiplicar(num1, num2));
             break;
         
         default:
